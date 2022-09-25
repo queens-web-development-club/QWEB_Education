@@ -10,17 +10,105 @@
     <!-- NEW CONTENT -->
     <!-- The <style> tag is used to add styling to html elements -->
     <style>
-
-        /* This styling  */
-        h3{
-            background-color: antiquewhite;
+        /* General styling */
+        body{
+            padding: 0px;
+            margin: 0px;
+            background-color: white;
             font-family: sans-serif;
+        }
+
+        /*  Navbar styling  */
+        .navbar{
+            background-color: gray;
+            width: 100%;
             padding: 10px;
         }
-    </style>
 
-    <!-- It is standard practice to write styling attributes in a seperate CSS file and link to it as so: -->
-    <link rel="stylesheet" href="style.css">
+        .nav-link{
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+            padding-left: 40px;
+        }
+
+        .nav-link:hover{
+            color: rgb(82, 108, 219);
+        }
+
+        /* Body styling */
+        .body{
+            margin: 50px;
+        }
+
+        .body img{
+            border-radius: 20px;
+        }
+
+        .body a{
+            width: 500px;
+            text-decoration: underline;
+            color: black;
+        }
+
+        .body a:hover{
+            color:rgb(61, 61, 194)
+        }
+
+        /* Styling for the Contact us form */
+
+        /* The # selector is used for identifying elements by ID */
+        #contact-form{
+            background-color: rgb(41, 41, 139);
+            color: white;
+            padding: 10px;
+            margin: 0px;
+        }
+
+        .blog-image-link:hover{
+            padding-left: 10px;
+        }
+
+        #contact-form h3{
+            background-color: inherit;
+            margin-left: 20px;
+            padding-top: 20px;
+        }
+
+        /* The . selector is used for identifying elements by class */
+        .form-content{
+            padding: 15px;
+        }
+
+        #contact-form button{
+            background-color: rgb(87, 181, 91);
+            color: white;
+            font-family: sans-serif;
+            padding: 5px 10px 5px 10px;
+            border: 0px;
+            margin-left: 20px;
+        }
+
+        #contact-form button:hover{
+            background-color: rgb(49, 116, 52);
+        }
+
+        .footer{
+            background-color: gray;
+            padding: 20px
+        }
+
+        .footer a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer a:hover{
+            color: rgb(96, 96, 227);
+            font-weight: bold;
+            /* padding-left: 3px; */
+        }
+    </style>
 
 </head>
 
@@ -52,9 +140,9 @@
         </p>
         <br><br>
 
-        <h2 >
-            <a href="https://blog.nwf.org/2015/01/10-nutty-facts-to-make-you-appreciate-squirrels/" >Cool Squirrel facts!</a> 
-        </h2>
+        <a href="https://blog.nwf.org/2015/01/10-nutty-facts-to-make-you-appreciate-squirrels/">
+            <h2>Cool Squirrel facts!</h2> 
+        </a>
         <ul>
             <li>Squirrels can find food buried beneath a foot of snow</li>
             <li>A squirrel's front teeth never stop growing</li>
@@ -103,7 +191,7 @@
             </tr>
         </table>
         <br><br>
-        <h2 class="rainbow">Check out our blog post below!</h2>
+        <h2>Check out our blog post below!</h2>
     
         <a href="https://www.facebook.com/groups/1977189249273537/">
             <img class="blog-image-link" src="https://images.edrawsoft.com/articles/graphic-organizer-for-writing/blog-writing.jpg" alt="" width="200px">

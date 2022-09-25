@@ -16,7 +16,7 @@ body{
 }
 
 .nav-link{
-    color: white ;
+    color: white;
     font-size: 24px;
     text-decoration: none;
     padding-left: 40px;
@@ -45,6 +45,13 @@ body{
     color:rgb(61, 61, 194)
 }
 
+/* a{
+     border: 1px solid ;
+ }
+
+ h2{
+     width: fit-content;
+ } */
 
 /* Styling for the Contact us form */
 
@@ -102,4 +109,15 @@ body{
     /* padding-left: 3px; */
 }
 
+/* Maybe bonus to add on as a cool thing? */
+.rainbow {
+    width: 24.5%;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
 
+.rainbow:hover {
+    color: transparent;
+    transition: 200ms ease;
+}
