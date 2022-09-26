@@ -3,12 +3,14 @@ var bodyParser = require("body-parser");
 const app = express();
 const port = 5000;
 var db = null;
+var cors = require("cors");
 
 const MongoClient = require("mongodb").MongoClient;
 var jsonParser = bodyParser.json();
 var otherParser = bodyParser.urlencoded({ extended: true });
 app.use(jsonParser);
 app.use(otherParser);
+app.use(cors());
 
 MongoClient.connect("mongodb://localhost:27017/local", (err, client) => {
   if (err) throw err;
