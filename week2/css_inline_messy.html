@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 
 <html lang="en">
 
@@ -6,101 +6,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Squirel Watching Club</title>
+    <title>People Watching Club</title>
 </head>
 
-<body style="padding: 0px; margin: 0px; background-color: white; font-family:sans-serif;">
-    <nav style="background-color: gray; width: 100%; padding: 10px;">
-        <a style="color: white; font-size: 24px; text-decoration: none; padding-left: 40px;" href="index.html">Home</a>
-        <a style="color: white; font-size: 24px; text-decoration: none; padding-left: 40px;" href="contact_us.html">Contact us</a>
+
+<body style="padding: 0px; margin: 0px;background-color: white; font-family: sans-serif;">
+    <nav class="navbar" style="background-color: gray; width: 100%; padding: 10px;">
+        <a class="nav-link" style="color: white; font-size: 24px; text-decoration: none; padding-left: 40px;"
+            href="index.html">Home</a>
+        <a class="nav-link" style="color: white; font-size: 24px; text-decoration: none; padding-left: 40px;"
+            href="contact_us.html">Contact us</a>
+        <!-- The first of a few differences between inline styling and stylesheets is the lack of the ability to target the "hover" value, it's simply not possible to do inline. -->
     </nav>
 
-    <header>
-        <h1> <span style="color:blue;" >Squirel</span>  Watching Club!</h1>
-        <h3>We are the Squirel watching club, we love Squirels.</h3>
-    </header>
-   
-    <!-- The <section> tag is similar to a div, and holds a section of the document -->
-    <section style="margin: 50px;">
-        <img style="border-radius: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/1/15/EasternGraySquirrel_GAm.jpg" alt="pic of squirel" width="400">
-        <br>
-        <p> 
-            <strong>Squirrels</strong> are members of the family <i>Sciuridae</i>, a family that includes
-            <b>small or medium-size rodents</b>. The squirrel family includes tree squirrels,
-            ground squirrels (including chipmunks and prairie dogs, among others), 
-            and flying squirrels. Squirrels are indigenous to the Americas, Eurasia, 
-            and Africa, and were introduced by humans to Australia.
-        </p>
-        <br><br>
-
-        <a style="width: 500px; text-decoration: underline; color: black;" href="https://blog.nwf.org/2015/01/10-nutty-facts-to-make-you-appreciate-squirrels/">
-            <h2>Cool Squirrel facts!</h2> 
-        </a>
-        <ul>
-            <li>Squirrels can find food buried beneath a foot of snow</li>
-            <li>A squirrel's front teeth never stop growing</li>
-            <li>Squirrels may lose 25 percent of their buried food to thieves</li>
-            <li>They zigzag to escape predators</li>
-            <li>Squirrels may pretend to bury a nut to throw off potential thieves</li>
-        </ul>
-        
-        <br>
-        <h2>Rules for safe squirel watching:</h2>
-    
-        <ol>
-            <li>Do not harass the Squirrels</li>
-            <li>Do not attempt to feed the Squirrels</li>
-            <li>Do not disrupt the squirrels burrow</li>
-            <li>Watch from a safe distance</li>
-        </ol>
-        <br>
-        <h2>Merchandise pricing:</h2>
-    
-        <table>
-            <tr>
-                <th>Item</th>
-                <th>Stock</th>
-                <th>price</th>
-            </tr>
-            <tr>
-                <td>Shirts</td>
-                <td>10+</td>
-                <td>$19.99</td>
-            </tr>
-            <tr>
-                <td>Pants</td>
-                <td>9</td>
-                <td>$24.99</td>
-            </tr>
-            <tr>
-                <td>Hats</td>
-                <td>10+</td>
-                <td>$9.99</td>
-            </tr>
-            <tr>
-                <td>Binoculars </td>
-                <td>4</td>
-                <td>$49.99</td>
-            </tr>
-        </table>
-        <br><br>
-        <h2>Check out our blog post below!</p>
-    
-        <a href="https://www.facebook.com/groups/1977189249273537/">
-            <img class="blog-image-link" src="https://images.edrawsoft.com/articles/graphic-organizer-for-writing/blog-writing.jpg" alt="" width="200px">
-        </a>    
-    </section>
-
     <!-- NEW CONTENT -->
-    <!-- The <footer> tag is similar to a div, used at the end of a document, for author info, copyright info, contact info, etc. -->
-    <footer style="background-color: gray; padding: 20px">
-        <a style="color: white; text-decoration: none;" href="email:contact@gmail.com">contact@gmail.com</a><br>
-        <a style="color: white; text-decoration: none;" href="tel:123-456-7890">123-456-7890</a> 
-        <br>
-        <br>
-        This site was written by: the members of the Queen's Squirel watching club.
-        <br>
-        copyright 2022&copy;
-    </footer>
+    <!-- The <header> tag is a container similar to a div, for nav links or introductory content -->
+    <header>
+        <!-- The <span> tag is used as an inline container, similar to a div but for marking up text -->
+        <h1> <span style="color:blue;">People</span> Watching Club!</h1>
+        <h3 style="background-color: antiquewhite; font-family: sans-serif; padding: 10px;"">We are the People watching club, we love People.</h3>
+    </header>
+
+    <!-- The <section> tag is similar to a div, and holds a section of the document -->
+    <section class=" body" style="margin: 50px;">
+            <img style="border-radius: 20px;"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/A_group_of_men_stand_birdwatching.jpg/1200px-A_group_of_men_stand_birdwatching.jpg"
+                alt="pic of people watching" width="400">
+            <br>
+            <p>
+                <strong>Humans</strong> (<i>Homo sapiens</i>) are the most abundant and widespread <b>species of
+                    primate</b>,
+                characterized by bipedalism and large, complex brains. This has enabled the development of advanced
+                tools,
+                culture, and language.
+            </p>
+            <br><br>
+
+            <h2>
+                <a style="width: 500px; text-decoration: underline; color: black;"
+                    href="https://www.natgeokids.com/uk/discover/science/general-science/15-facts-about-the-human-body/">Cool
+                    Human
+                    facts!</a>
+            </h2>
+            <ul>
+                <li>Humans are very social animals by design</li>
+                <li>Enjoy touching grass</li>
+                <li>Humans may lose 25 percent of their food to thieves (other humans)</li>
+                <li>They run fast to escape predators</li>
+            </ul>
+
+            <br>
+            <h2>Rules for safe human watching:</h2>
+
+            <ol>
+                <li>Do not harass the Humans</li>
+                <li>Do not attempt to feed the Humans</li>
+                <li>Do not disrupt the human's home</li>
+                <li>Watch from a safe distance</li>
+            </ol>
+            <br>
+            <h2>Merchandise pricing:</h2>
+
+            <table>
+                <tr>
+                    <th>Item</th>
+                    <th>Stock</th>
+                    <th>price</th>
+                </tr>
+                <tr>
+                    <td>Shirts</td>
+                    <td>10+</td>
+                    <td>$19.99</td>
+                </tr>
+                <tr>
+                    <td>Pants</td>
+                    <td>9</td>
+                    <td>$24.99</td>
+                </tr>
+                <tr>
+                    <td>Hats</td>
+                    <td>10+</td>
+                    <td>$9.99</td>
+                </tr>
+                <tr>
+                    <td>Binoculars </td>
+                    <td>4</td>
+                    <td>$49.99</td>
+                </tr>
+            </table>
+            <br><br>
+            <h2 class="rainbow">Check out our blog post below!</h2>
+
+            <a
+                href="https://www.psychologytoday.com/us/blog/fulfillment-any-age/201504/the-experts-guide-people-watching">
+                <img src="https://images.edrawsoft.com/articles/graphic-organizer-for-writing/blog-writing.jpg" alt=""
+                    width="200px">
+            </a>
+            </section>
+
+            <!-- NEW CONTENT -->
+            <!-- The <footer> tag is similar to a div, used at the end of a document, for author info, copyright info, contact info, etc. -->
+            <footer class="footer">
+                <a href="email:contact@gmail.com">contact@gmail.com</a><br>
+                <a href="tel:123-456-7890">123-456-7890</a>
+                <br>
+                <br>
+                This site was written by: the members of the Queen's People watching club.
+                <br>
+                copyright 2022&copy;
+            </footer>
 </body>
+
 </html>
