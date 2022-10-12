@@ -18,7 +18,18 @@
 
     <!-- We have seperated the navbar into different divs for styling -->
     <nav class="navbar">
-        <img class="nav-logo" src="pwclogo.png" alt="">
+        <!--
+        Href values that don't begin with http:// or https:// are called relative path's. Instead of pointing to another
+        website, they change the path of the current site. For example, if you're on google.com/search and
+        click on a link to "products", you'll go to "google.com/search/products".
+
+        There is an exception: when the relative path begins with "/", instead of appending to the end of the current url,
+        the relative path is appended to the "root" of the current url. For example, if you're on google.com/search and
+        you click a link to /products, you'll be sent to google.com/products.
+
+        We're using that exception here to link to our homepage.
+        -->
+        <a href="/"><img class="nav-logo" src="pwclogo.png" alt=""></a>
         <div class="nav-link-container">
             <a class="nav-link" href="index.html">Home</a>
             <a class="nav-link" href="contact_us.html">Contact us</a>

@@ -244,11 +244,22 @@ th, td{
     font-family: sans-serif;
     padding: 5px 10px 5px 10px;
     border: 0px;
+    width: 125px;
+    height: 50px;
     margin-left: 20px;
+    margin-top: 20px;
 }
 
 #contact-form button:hover{
     background-color: rgb(49, 116, 52);
+}
+.radio-inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.radio-inputs > label {
+    margin: 10px;
 }
 
 .footer{
