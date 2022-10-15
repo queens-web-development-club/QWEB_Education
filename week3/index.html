@@ -19,15 +19,21 @@
     <!-- We have seperated the navbar into different divs for styling -->
     <nav class="navbar">
         <!--
-        Href values that don't begin with http:// or https:// are called relative path's. Instead of pointing to another
-        website, they change the path of the current site. For example, if you're on google.com/search and
-        click on a link to "products", you'll go to "google.com/search/products".
+        An image which links back to the homepage.
 
-        There is an exception: when the relative path begins with "/", instead of appending to the end of the current url,
-        the relative path is appended to the "root" of the current url. For example, if you're on google.com/search and
-        you click a link to /products, you'll be sent to google.com/products.
+        Href values like the one below are called relative paths, because they don't start with
+        https:// or http://. Instead of linking to a different site, relative paths change the user's
+        position on the current site.
 
-        We're using that exception here to link to our homepage.
+        Since the path below begins with "/", we'll be linking to the root of the url (the website name) plus
+        anything after the slash (in this case, nothing). For example, if we were on google.com/search and clicked
+        a link to "/abc", then we would be sent to google.com/abc.
+
+        However, if the href doesn't start with "/", the entire href value will be appended to the current url. If
+        we're on google.com/search and click a link to "/abc", then we'll be sent to google.com/search/abc.
+
+        Try it out for yourself: click the image from different pages of our site, and see where you end up. Then
+        modify the href to a different relative path and try again.
         -->
         <a href="/"><img class="nav-logo" src="pwclogo.png" alt=""></a>
         <div class="nav-link-container">
