@@ -21,36 +21,7 @@ body {
 }
 
 .nav-link:hover {
-  color: rgb(82, 108, 219);
-}
-
-/* Body styling */
-.body {
-  margin: 50px;
-}
-
-.body img {
-  border-radius: 20px;
-}
-
-.body a {
-  width: 500px;
-  text-decoration: underline;
-  color: black;
-}
-
-.body a:hover {
-  color: rgb(61, 61, 194);
-}
-
-/* Styling for the Contact us form */
-
-/* The # selector is used for identifying elements by ID */
-#contact-form h3 {
-  background-color: inherit;
-  margin-left: 20px;
-  padding-top: 20px;
-  border: 1px solid rgb(96, 96, 227);
+  color: rgb(204, 85, 0);
 }
 
 .blog-image-link:hover {
@@ -61,11 +32,7 @@ body {
   background-color: inherit;
   margin-left: 20px;
   padding-top: 20px;
-}
-
-/* The . selector is used for identifying elements by class */
-.form-content {
-  padding: 15px;
+  border: 1px solid rgb(96, 96, 227);
 }
 
 #contact-form button {
@@ -79,22 +46,6 @@ body {
 
 #contact-form button:hover {
   background-color: rgb(49, 116, 52);
-}
-
-.footer {
-  background-color: gray;
-  padding: 20px;
-}
-
-.footer a {
-  color: white;
-  text-decoration: none;
-}
-
-.footer a:hover {
-  color: rgb(96, 96, 227);
-  font-weight: bold;
-  /* padding-left: 3px; */
 }
 
 /* Maybe bonus to add on as a cool thing? */

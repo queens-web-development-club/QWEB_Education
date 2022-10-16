@@ -1,0 +1,17 @@
+body {
+  color: orange;
+  font-family: sans-serif;
+}
+
+.navbar {
+  background-color: gray;
+  width: 100%;
+  padding: 10px;
+}
+
+#contact-form {
+  background-color: rgb(41, 41, 139);
+  color: white;
+  padding: 10px;
+  margin: 0px;
+}
