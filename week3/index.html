@@ -18,7 +18,24 @@
 
     <!-- We have seperated the navbar into different divs for styling -->
     <nav class="navbar">
-        <img class="nav-logo" src="pwclogo.png" alt="">
+        <!--
+        An image which links back to the homepage.
+
+        Href values like the one below are called relative paths, because they don't start with
+        https:// or http://. Instead of linking to a different site, relative paths change the user's
+        position on the current site.
+
+        Since the path below begins with "/", we'll be linking to the root of the url (the website name) plus
+        anything after the slash (in this case, nothing). For example, if we were on google.com/search and clicked
+        a link to "/abc", then we would be sent to google.com/abc.
+
+        However, if the href doesn't start with "/", the entire href value will be appended to the current url. If
+        we're on google.com/search and click a link to "/abc", then we'll be sent to google.com/search/abc.
+
+        Try it out for yourself: click the image from different pages of our site, and see where you end up. Then
+        modify the href to a different relative path and try again.
+        -->
+        <a href="/"><img class="nav-logo" src="pwclogo.png" alt=""></a>
         <div class="nav-link-container">
             <a class="nav-link" href="index.html">Home</a>
             <a class="nav-link" href="contact_us.html">Contact us</a>
