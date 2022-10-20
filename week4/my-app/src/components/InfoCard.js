@@ -2,6 +2,7 @@ import "../App.css";
 import React from "react";
 
 
+// InfoCard is a React component which accepts a name, coordinates, and an image url (all strings)
 function InfoCard(props) {
   return (
     <div className="title-card-container">

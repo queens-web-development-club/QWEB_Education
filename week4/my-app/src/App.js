@@ -43,6 +43,7 @@ function App() {
 
       <h1 className="title-card-container">Places to watch people</h1>
 
+      {/* Render some InfoCard components and pass a name, coordinates and an image as props */}
       <InfoCard
         name="Eiffel Tower"
         coordinates="48.8584° N, 2.2945° E"
