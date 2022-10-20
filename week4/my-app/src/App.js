@@ -43,19 +43,19 @@ function App() {
         name="Eiffel Tower" 
         coordinates="48.8584° N, 2.2945° E"
         image="https://www.toureiffel.paris/sites/default/files/actualite/image_principale/vue_depuisjardins_webbanner_3.jpg"
-      ></InfoCardFunction>
+      />
 
       <InfoCardFunction 
         name="Empire State Building" 
         coordinates="40.7484° N, 73.9857° W"
         image="https://media.timeout.com/images/101705309/image.jpg"
-      ></InfoCardFunction>
+      />
 
       <InfoCardFunction 
         name="CN Tower" 
         coordinates="43.6426° N, 79.3871° W"
         image="https://upload.wikimedia.org/wikipedia/commons/9/96/Toronto_-_ON_-_Toronto_Harbourfront7.jpg"
-      ></InfoCardFunction>
+      />
     </div>
   );
 }
