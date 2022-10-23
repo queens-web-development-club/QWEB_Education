@@ -5,8 +5,6 @@ body {
   display: flex;
   margin: 10px;
   border: 15px solid #fc766a;
-  justify-content: center;
-  align-items: center;
 }
 .item {
   margin: 10px;
