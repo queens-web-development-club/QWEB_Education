@@ -1,5 +1,5 @@
 const form = document.querySelector('#contact-form')
-const name = document.querySelector('#name')
+const nameForm = document.querySelector('#name')
 const email = document.querySelector('#email')
 const message = document.querySelector('#message')
 const ok = document.querySelector('#Ok')
@@ -12,7 +12,7 @@ form.addEventListener('submit', (e) => {
   let messages = []
 
   // This will check that the Name input isnt empty
-  if (name.value === '' || name.value == null) {
+  if (nameForm.value === '' || nameForm.value == null) {
     messages.push('Name is required')
   }
 
