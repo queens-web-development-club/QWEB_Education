@@ -1,20 +1,17 @@
 const form = document.querySelector('#contact-form')
 
-// Using an event listener and arrow function to make things easier
 form.addEventListener('submit', (event) => {
-  // Grab all of the values of the form from our submission
   const name = event.target.name.value
   const email = event.target.email.value
   const message = event.target.message.value
   const experience = event.target.experience.value
 
-  // Grabs the error element from our site => it's how we display our error message on our site
+  console.log(name, email, message, experience)
+
   const errorElement = document.querySelector('#error')
 
-  // We want to hold all of our errors somewhere
   let messages = []
 
-  // This will check that the Name input isnt empty
   if (name === '' || name == null) {
     messages.push('Name is required')
   }

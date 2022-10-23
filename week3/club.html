@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>People Watching Club</title>
+
+	<!-- It is standard practice to write styling attributes in a seperate CSS file and link to it as so: -->
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+	<!-- We have seperated the navbar into different divs for styling -->
+	<nav class="navbar">
+		<!--
+        An image which links back to the homepage.
+
+        Href values like the one below are called relative paths, because they don't start with
+        https:// or http://. Instead of linking to a different site, relative paths change the user's
+        position on the current site.
+
+        Since the path below begins with "/", we'll be linking to the root of the url (the website name) plus
+        anything after the slash (in this case, nothing). For example, if we were on google.com/search and clicked
+        a link to "/abc", then we would be sent to google.com/abc.
+
+        However, if the href doesn't start with "/", the entire href value will be appended to the current url. If
+        we're on google.com/search and click a link to "/abc", then we'll be sent to google.com/search/abc.
+
+        Try it out for yourself: click the image from different pages of our site, and see where you end up. Then
+        modify the href to a different relative path and try again.
+        -->
+		<a href=""><img class="nav-logo" src="pwclogo.png" alt=""></a>
+		<div class="nav-link-container">
+			<a class="nav-link" href="club.html">Home</a>
+			<a class="nav-link" href="contact.html">Contact us</a>
+		</div>
+	</nav>
+
+
+	<!-- We have seperated the header into different divs for styling -->
+	<header>
+		<div class="header-main-container">
+			<h1>
+				<span class="gradient-text">People Watching Club!</span>
+			</h1>
+			<div class="header-container-two">
+				<h3>We are the People Watching Club, we love watching people...</h3>
+			</div>
+		</div>
+	</header>
+
+
+	<!-- We have seperated the main body into different divs for styling -->
+	<section class="body-container">
+		<div class="body">
+			<div class="image-container">
+				<img
+					src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/A_group_of_men_stand_birdwatching.jpg/1200px-A_group_of_men_stand_birdwatching.jpg"
+					alt="" width="400">
+			</div>
+
+			<p>
+				<strong>Humans</strong> (<i>Homo sapiens</i>) are the most abundant and widespread <b>species of
+					primate</b>,
+				characterized by bipedalism and large, complex brains. This has enabled the development of advanced
+				tools,
+				culture, and language.
+			</p>
+			<p>
+				Humans are omnivorous, capable of consuming a wide variety of plant and animal material, and have used
+				fire
+				and other forms of heat to prepare and cook food since the time of H. erectus. They can survive for up
+				to
+				eight weeks without food, and three or four days without water. Humans are generally diurnal, sleeping
+				on
+				average seven to nine hours per day. Childbirth is dangerous, with a high risk of complications and
+				death.
+				Often, both the mother and the father provide care for their children, who are helpless at birth.
+			</p>
+
+			<!-- This is a flex box -->
+			<div class="flex-container">
+
+				<!-- This is a flex item -->
+				<div class="flex-item">
+					<h2><a
+							href="https://www.natgeokids.com/uk/discover/science/general-science/15-facts-about-the-human-body/">Cool
+							Human facts!</a> </h2>
+					<ul>
+						<li>Humans are very social animals by design</li>
+						<li>Enjoy touching grass</li>
+						<li>Humans may lose 25 percent of their food to thieves (other humans)</li>
+						<li>They run fast to escape predators</li>
+					</ul>
+				</div>
+				<div class="flex-item">
+					<h2>Rules for safe human watching:</h2>
+					<ol>
+						<li>Do not harass the Humans</li>
+						<li>Do not attempt to feed the Humans</li>
+						<li>Do not disrupt the human's home</li>
+						<li>Watch from a safe distance</li>
+					</ol>
+				</div>
+				<div class="flex-item">
+					<h2>Merchandise pricing:</h2>
+					<div class="flex-container">
+						<table>
+							<tr>
+								<th>Item</th>
+								<th>Stock</th>
+								<th>price</th>
+							</tr>
+							<tr>
+								<td>Shirts</td>
+								<td>10+</td>
+								<td>$19.99</td>
+							</tr>
+							<tr>
+								<td>Pants</td>
+								<td>9</td>
+								<td>$24.99</td>
+							</tr>
+							<tr>
+								<td>Hats</td>
+								<td>10+</td>
+								<td>$9.99</td>
+							</tr>
+							<tr>
+								<td>Binoculars </td>
+								<td>4</td>
+								<td>$49.99</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="flex-container-column">
+				<h2>Check out our blog post below!</h2>
+				<div class="image-link-container">
+					<a
+						href="https://www.psychologytoday.com/us/blog/fulfillment-any-age/201504/the-experts-guide-people-watching">
+						<img
+							src="https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/anatomy-of-a-blog-post-deconstructed-header.jpg"
+							alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<footer class="footer">
+		<!-- Flex Container 1 -->
+		<div class="footer-container">
+			<!-- Flex Container 2 (also Flex Container 1, Item 1 ) -->
+			<a id="footer-container-item" href="https://instagram.com">Instagram</a>
+			<a id="footer-container-item" href="https://linkedin.com">Linkedin</a>
+			<a id="footer-container-item" href="email:contact@gmail.com">contact@gmail.com</a>
+			<!-- Flex Container 2, Item 1 -->
+			<a id="footer-container-item" href="tel:123-456-7890">123-456-7890</a> <!-- Flex Container 2, Item 2 -->
+		</div>
+		<p>This site was written by the members of the Queen's People Watching Club.</p>
+		<!-- Flex Container 1, Item 2 -->
+		<p>copyright 2022&copy;</p> <!-- Flex Container 1, Item 3 -->
+	</footer>
+</body>
+
+</html>

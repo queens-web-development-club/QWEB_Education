@@ -1,0 +1,299 @@
+/* General styling */
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: white;
+  font-family: sans-serif;
+}
+
+/*  Navbar styling  */
+.navbar {
+  background-color: rgb(128, 128, 128);
+  width: 100%;
+  display: flex;
+}
+.nav-link-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-direction: row;
+}
+.nav-logo {
+  width: 100px;
+  padding: 10px;
+}
+@media (min-width: 650px) {
+  .nav-logo {
+    padding-left: 160px;
+  }
+  .nav-link-container {
+    width: 50%;
+  }
+}
+
+.nav-link {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background: -webkit-linear-gradient(0deg, #f12711, #f5af19);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Header styling */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 650px) {
+  .header-main-container {
+    width: 60%;
+  }
+}
+
+.header-main-container h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.gradient-text {
+  font-size: 60px;
+  font-weight: bold;
+  background: -webkit-linear-gradient(0deg, #f12711, #f5af19);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h3 {
+  background-color: #e15242;
+  color: white;
+  font-family: sans-serif;
+  padding: 15px;
+}
+
+/* Body styling */
+.body-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+.body {
+  width: 60%;
+}
+@media (max-width: 650px) {
+  .body {
+    width: 90%;
+  }
+}
+
+/* FlexBox first introduction */
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.flex-item {
+  background: #e15242;
+  color: white;
+  padding: 20px;
+  margin: 20px;
+  border: rgb(0, 0, 0) solid 3px;
+  border-radius: 10px;
+  width: 300px;
+}
+.flex-container-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.flex-container-column a {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 150px;
+  width: 200px;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+.body a {
+  width: 500px;
+  text-decoration: underline;
+  color: white;
+}
+.body a:hover {
+  color: rgb(19, 26, 59);
+}
+table {
+  border: rgb(255, 255, 255) 2px solid;
+  padding: 10px;
+}
+th,
+td {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.image-link-container {
+}
+.image-link-container:hover {
+}
+.flex-container-column img {
+  border-radius: 20px;
+  width: 200px;
+}
+.flex-container-column img:hover {
+  width: 205px;
+  margin-bottom: -3px; /*Counteracts the width growing, to keep the footer in place*/
+}
+
+/* Styling for the Contact us form */
+
+/* The # selector is used for identifying elements by ID */
+#error {
+  padding: 10px;
+  background-color: rgb(199, 74, 74);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  display: none;
+}
+
+#contact-form {
+  color: white;
+  margin: 0px;
+}
+#contact-form h3 {
+  background-color: inherit;
+  margin-left: 20px;
+  padding-top: 20px;
+}
+
+/* The . selector is used for identifying elements by class */
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid rgb(14, 14, 71);
+  border-radius: 30px;
+  margin: 50px;
+  padding: 50px;
+  padding-left: 6%;
+  padding-right: 6%;
+  background: linear-gradient(180deg, #f12711, #f5af19);
+}
+.form-content h3 {
+  font-size: 30px;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  font-size: 20px;
+}
+#name {
+  width: 350px;
+  height: 25px;
+  border-radius: 25px;
+  padding-left: 15px;
+  font-family: sans-serif;
+  font-size: medium;
+}
+#email {
+  width: 350px;
+  height: 25px;
+  border-radius: 25px;
+  padding-left: 15px;
+  font-family: sans-serif;
+  font-size: medium;
+}
+#message {
+  width: 350px;
+  border-radius: 25px;
+  resize: none;
+  padding-left: 15px;
+  padding-top: 15px;
+  font-family: sans-serif;
+  font-size: medium;
+}
+
+#contact-form button {
+  background-color: rgb(87, 181, 91);
+  color: white;
+  font-family: sans-serif;
+  padding: 5px 10px 5px 10px;
+  border: 0px;
+  width: 125px;
+  height: 50px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+#contact-form button:hover {
+  background-color: rgb(49, 116, 52);
+}
+.radio-inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.radio-inputs > label {
+  margin: 10px;
+}
+
+.footer {
+  background-color: gray;
+  color: white;
+  text-decoration: none;
+  height: 150px;
+  display: flex;
+  align-items: center; /* This centers the flex-items vertically  */
+  justify-content: center; /* This centers the flex-items horizontally */
+  flex-direction: column;
+}
+.footer-container {
+  flex-wrap: wrap;
+  display: flex;
+  /* justify-content: center; */
+  padding: 5px;
+  width: 60%;
+  flex-direction: row;
+}
+#footer-container-item {
+  text-align: center;
+  flex: auto;
+}
+
+.footer p {
+  padding: 5px;
+  margin: 0px;
+  text-align: center;
+}
+.footer a {
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  color: rgb(19, 26, 59);
+  font-weight: bold;
+  /* padding-left: 3px; */
+}
