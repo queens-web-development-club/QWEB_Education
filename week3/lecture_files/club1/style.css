@@ -1,0 +1,14 @@
+body {
+  font-size: 32px;
+}
+.container {
+  display: flex;
+  margin: 10px;
+  border: 15px solid #fc766a;
+  justify-content: center;
+  align-items: center;
+}
+.item {
+  margin: 10px;
+  border: 5px dotted #5b84b1ff;
+}
