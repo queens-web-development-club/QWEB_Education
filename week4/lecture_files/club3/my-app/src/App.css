@@ -1,0 +1,32 @@
+.title-card-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  width: 100%;
+}
+.title-card-item {
+  width: 500px;
+  background-color: rgb(239, 239, 239);
+  padding: 50px;
+  margin-top: 50px;
+  border-radius: 15px;
+}
+.card-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+.button {
+  background-color: white;
+  color: rgb(83, 199, 83);
+  font-weight: bold;
+  font-size: medium;
+  padding: 10px;
+  border: 3px solid rgb(83, 199, 83);
+  border-radius: 10px;
+  transition: all 400ms;
+}
+.button:hover {
+  background-color: rgb(83, 199, 83);
+  color: white;
+}

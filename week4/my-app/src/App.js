@@ -30,7 +30,7 @@ function App() {
           <button
             className="button"
             onClick={() => {
-              console.log("Heres some more info:");
+              console.log("Here's some more info:");
               console.log(
                 "https://en.wikipedia.org/wiki/Eiffel_Tower_(Paris,_Tennessee)"
               );
