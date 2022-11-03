@@ -1,0 +1,28 @@
+.centered-div{
+    width: 100%;
+    background-color: #986F59;
+    /* display: flex; */
+    /* align-items: center; */
+}
+
+.navbar{
+    width: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    font-family: 'Fredoka', sans-serif;
+    color: #fff;
+}
+
+.navbar-img{
+    width: 100px;
+    margin-left: 20px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+    font-size: 20px;
+}
