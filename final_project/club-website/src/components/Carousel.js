@@ -1,15 +1,23 @@
+import "../css/carousel.css"
+import { useState } from "react";
 
+const Carousel = ({images}) => {
+    const [currentIndex, setCurrentUser] = useState(0);
 
-function Carousel(props){
-    console.log(props.images[0].id);
+    const slideStyles = {
+        width: '100%',
+        height: '100%',
+        backgroundPosition: 'center',
+        backgroundSize: "cover",
+        backgroundImage: images[currentIndex].src
+    }
 
     return(
-        <>
-            <div>
-                test
-            </div>
-        </>
+        <div className="slider-styles">
+            {/* <div style={slideStyles}></div> */}
+            <img style={slideStyles} src={images[currentIndex].src} ></img>
+        </div>
     )
-}
+};
 
 export default Carousel;

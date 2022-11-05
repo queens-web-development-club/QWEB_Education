@@ -1,4 +1,4 @@
-import "../css/pages.css"
+import "../css/Homepage.css"
 
 function AboutUs(){
     return(
