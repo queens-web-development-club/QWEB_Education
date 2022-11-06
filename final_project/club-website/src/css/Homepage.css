@@ -110,3 +110,21 @@
     text-decoration: none;
     color: #986F59;
 }
+.shop-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.shop button {
+    font-size: 30px;
+    font-family: inherit;
+    color: #fff;
+    background-color: #6DBA49;
+    border-radius: 10px;
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0px solid;
+    height: 80px;
+}

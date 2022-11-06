@@ -16,15 +16,18 @@ function Home(){
     const carouselImages = [{
         id: 1,
         src: carouselImg1,
-        alt: 'carousel image 1'
+        alt: 'carousel image 1',
+        subtitle: "Have a seat and watch the world go by..."
     }, {
         id: 2,
         src: carouselImg2,
-        alt: 'carousel image 2'
+        alt: 'carousel image 2',
+        subtitle: "It's a good day, let's see..."
     }, {
         id: 3,
         src: carouselImg3,
-        alt: 'carousel image 3'
+        alt: 'carousel image 3',
+        subtitle: "Perfect sunny day to watch people..."
     }]
 
     const shopitems = [
@@ -45,7 +48,9 @@ function Home(){
     return (
         <>
             <section className="carousel">
-                <Carousel images={carouselImages}/>
+                <Carousel 
+                    images={carouselImages}
+                />
                 {/* <Socials/> */}
             </section>
             <section className="about-section" >
@@ -85,6 +90,11 @@ function Home(){
                     <div className="home-shop-items">
                         <HomeShopCard info={shopitems[0]}></HomeShopCard>
                         <HomeShopCard info={shopitems[1]}></HomeShopCard>
+                        <div className="shop-container">
+                            <button>
+                                Shop Now!
+                            </button>
+                        </div>
                     </div>
                 </div>
             </section>
