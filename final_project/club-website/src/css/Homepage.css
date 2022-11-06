@@ -1,6 +1,9 @@
 /* Home Page - Carousel Section */
 .carousel{
-
+    width: 100vw;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: red;
 }
 .homepage-socials{
     /* position: absolute; */
