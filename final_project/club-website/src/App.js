@@ -1,16 +1,16 @@
-import './css/App.css';
-import Navbar from './components/navbar';
-import Footer from './components/Footer';
-import { Route, Routes } from 'react-router-dom';
+import "./css/App.css";
+import Navbar from "./components/navbar";
+import Footer from "./components/Footer";
+import { Route, Routes } from "react-router-dom";
 
 // Pages
-import Home from './pages/Home';
-import AboutUs from './pages/AboutUs';
-import Shop from './pages/Shop';
-import UpcomingEvents from './pages/UpcomingEvents';
-import PastEvents from './pages/PastEvents';
-import ContactUs from './pages/ContactUs';
-import NotFound from './pages/NotFound';
+import Home from "./pages/Home";
+import AboutUs from "./pages/AboutUs";
+import Shop from "./pages/Shop";
+import UpcomingEvents from "./pages/UpcomingEvents";
+import PastEvents from "./pages/PastEvents";
+import ContactUs from "./pages/ContactUs";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -28,7 +28,7 @@ function App() {
         {/* 404 */}
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </>
   );
 }
