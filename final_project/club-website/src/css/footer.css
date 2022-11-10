@@ -1,19 +1,8 @@
 .footer{
     background-color: #986F59;
-    padding: 0;
-    width: 100%;
-}
-.footer p{
     text-align: center;
     padding-bottom: 30px;
 }
-.socials{
+.footer div{
     padding-top: 20px;
-    display: flex;
-    align-items: center;
-    margin: auto;
-    justify-content: center;
-}
-.social{
-    padding: 10px;
 }
