@@ -11,6 +11,8 @@ import UpcomingEvents from "./pages/UpcomingEvents";
 import PastEvents from "./pages/PastEvents";
 import ContactUs from "./pages/ContactUs";
 import NotFound from "./pages/NotFound";
+import Cart from "./pages/Cart";
+import Checkout from "./pages/Checkout";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/shop" element={<Shop />} />
+          <Route path="/shop/cart" element={<Cart/>}></Route>
+          <Route path="/shop/checkout" element={<Checkout/>}></Route>
         <Route path="/upcoming-events" element={<UpcomingEvents />} />
         <Route path="/past-events" element={<PastEvents />} />
         <Route path="/contact" element={<ContactUs />} />
