@@ -12,7 +12,7 @@ import binocularsImg1 from "../img/shop/shopping 1.png";
 import binocularsImg2 from "../img/shop/shopping 2.png";
 import Socials from "../components/Socials";
 
-function Home(){
+function Home() {
     const carouselImages = [{
         id: 1,
         src: carouselImg1,
@@ -28,7 +28,7 @@ function Home(){
         src: carouselImg3,
         alt: 'carousel image 3',
         subtitle: "Perfect sunny day to watch people..."
-    }]
+    }];
 
     const shopitems = [
         {
@@ -43,7 +43,7 @@ function Home(){
             name: "Zooming Binoculars",
             description: "Powerful zoom-in-out lens perfect for scoping out ..."
         }
-    ]
+    ];
 
     return (
         <>
@@ -77,12 +77,21 @@ function Home(){
                 <p>
                     Come join us at Breakwater Park for a contest to see how many runners you can spot! Contest winner get a $15 Amazon giftcard! Don’t forget your binocolurs! 
                 </p>
+                {/* <h3>Upcoming Events</h3>
+                <h4>{upEvent.eventName}</h4>
+                <p>
+                    {upEvent.date} <br></br>
+                    {upEvent.time} EST @ {upEvent.location}
+                </p>
+                <p>
+                    {upEvent.context}
+                </p>
                 <button>
                     Register Now!
                 </button>
                 <a href="/upcoming-events">
                     View all events &rarr;
-                </a>
+                </a> */}
             </section>
             <section className="shop">
                 <div>
@@ -99,7 +108,7 @@ function Home(){
                 </div>
             </section>
         </>
-    )
-}
+    );
+};
 
 export default Home;

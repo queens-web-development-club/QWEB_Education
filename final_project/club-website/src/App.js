@@ -2,6 +2,7 @@ import './css/App.css';
 import Navbar from './components/navbar';
 import Footer from './components/Footer';
 import { Route, Routes } from 'react-router-dom';
+import { useEffect, useState } from 'react'
 
 // Pages
 import Home from './pages/Home';
@@ -13,6 +14,19 @@ import ContactUs from './pages/ContactUs';
 import NotFound from './pages/NotFound';
 
 function App() {
+  const [events, setEvents] = useState(null);
+  
+  useEffect(() => {
+    fetch('http://localhost:8000/events')
+      .then(res => {
+        return res.json();
+      })
+      .then(data => {
+        console.log(data);
+        setEvents(data);
+      })
+  }, []);
+
   return (
     <>
       <Navbar />

@@ -1,0 +1,96 @@
+{
+    "events": {
+        "upcomingEvents": [
+            {
+                "id": 1,
+                "eventName": "Brench Lookout",
+                "context": "Come join us at Breakwater Park for a contest to see how many runners you can spot! Contest winner get a $15 Amazon giftcard! Don't forget your binocolurs!",
+                "date": "2022-11-15",
+                "time": "5:00PM",
+                "location": "Breakwater Park",
+                "price": 0,
+                "spaces": 30,
+                "registered": 5
+            },
+            {
+                "id": 2,
+                "eventName": "Leggett Hall Viewing",
+                "context": "...Literally. Come stare at people that go in and out of Leggett Hall. The registration fee goes towards the participants' popcorn fund.",
+                "date": "2022-11-16",
+                "time": "3:00PM",
+                "location": "Parking Lot Behind Stirling Hall",
+                "price": 3.33,
+                "spaces": 2,
+                "registered": 3
+            },
+            {
+                "id": 3,
+                "eventName": "Stalk-Off",
+                "context": "Battle royale to see who can find everyone else's addresses first. The registration fee goes towards the club leads' popcorn fund",
+                "date": "2022-11-29",
+                "time": "11:00PM",
+                "location": "Your Place Of Residence",
+                "price": 6.66,
+                "spaces": 3,
+                "registered": 17
+            },
+            {
+                "id": 4,
+                "eventName": "You Are Being Watched",
+                "context": "Look behind you.\nThe registration fee goes towards the cost of your existence permit.",
+                "date": "2022-11-29",
+                "time": "2:00AM",
+                "location": "Your Current Location",
+                "price": 9.99,
+                "spaces": 69,
+                "registered": 666
+            },
+            {
+                "id": 5,
+                "eventName": "Valentine's Day Blank Stare",
+                "context": "You got a date? Yeah, me neither. Come stare at an assigned starting partner this Valentine's Day. Only lonely people allowed",
+                "date": "2023-02-14",
+                "time": "8:00AM",
+                "location": "136 Princess St (Shoppers Drug Mart)",
+                "price": 0,
+                "spaces": 39,
+                "registered": 1
+            }
+        ],
+        "pastEvents": [
+            {
+                "id": 1,
+                "eventName": "First Meeting",
+                "context": "Come meet everyone in the club!\n No registration fee this time because we're gracious like that >:D.",
+                "date": "2022-09-20",
+                "time": "6:00PM",
+                "location": "Ellis Auditorium",
+                "price": 0,
+                "Attendees": 40,
+                "MeetingNotes": [
+                    "Good club member turnout",
+                    "Poor club leader turnout",
+                    "No seriously where were the leads",
+                    "The whole event was 40 confused people sitting in silence"
+                ]
+            },
+            {
+                "id": 2,
+                "eventName": "First Meeting Redo",
+                "context": "Come meet everyone in the club, as well as the club leads this time! Again, no registration fee this time because we're gracious like that.",
+                "date": "2022-09-27",
+                "time": "6:00PM",
+                "location": "Ellis Auditorium",
+                "price": 0,
+                "Attendees": 40,
+                "MeetingNotes": [
+                    "Good club member turnout",
+                    "Poor club leader turnout",
+                    "The leads weren't here again",
+                    "Why do I have to type this up? I'm just a general member",
+                    "I'm so tired"
+                ]
+            }
+        ]
+    }
+}
