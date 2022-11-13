@@ -1,0 +1,20 @@
+[
+  {
+    "id": "0",
+    "name": "Leggett Hall Viewing",
+    "description": "...Literally. Come stare at people that go in and out of Leggett Hall.\nThe registration fee goes towards the participants’ popcorn fund.",
+    "location": "3:00PM\nParking Lot Behind Stirling Hall\n$3.33",
+    "date": "2022-11-15T00:00:00-05:00",
+    "spaces_left": 5,
+    "registered": 0
+  },
+  {
+    "id": "1",
+    "name": "Stalk-Off",
+    "description": "Battle royale to see who can find everyone else’s addresses first.\nThe registration fee goes towards the club leads’ popcorn fund.",
+    "date": "2022-11-29T00:00:00-05:00",
+    "location": "11:00PM\nYour Place of Residence\n$6.66",
+    "spaces_left": 5,
+    "registered": 0
+  }
+]
