@@ -26,6 +26,7 @@ function AboutUs() {
             <button className="register-button">Register Now!</button>
           </a>
         </div>
+      </div>
     </>
   );
 }

@@ -1,6 +1,7 @@
 import react, { useState, useEffect } from "react";
 import "../css/navbar.css";
 import Binoculars from "../img/binoculars.png";
+import Cart from "../img/shop/cart_icon.png";
 
 const Navbar = () => {
   const originalIsMobile = window.innerWidth < 800;
@@ -14,7 +15,7 @@ const Navbar = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  if(isMobile == false){
+  if(isMobile === false){
     console.log(isMobile)
     return (
       <div className="centered-div">
@@ -39,10 +40,13 @@ const Navbar = () => {
               Contact Us
             </a>
           </div>
+          <a href="/shop/cart">
+            <img className="navbar-img2" src={Cart} />
+          </a>
         </nav>
       </div>
     );
-  } else if(isMobile == true){
+  } else if(isMobile === true){
     return (
       <div className="centered-div">
         <nav className="navbar">
