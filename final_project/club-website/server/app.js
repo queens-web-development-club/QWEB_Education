@@ -1,6 +1,6 @@
 const Koa = require('koa');
 const router = require('@koa/router')();
-const cors = require('@koa/cors')();
+const cors = require('@koa/cors');
 const fs = require('fs');
 
 
@@ -43,9 +43,8 @@ router.get("/events", async (ctx) => {
     ctx.body = events;
 })
 
-
-app.use(router.routes())
 app.use(cors());
+app.use(router.routes())
 
 console.log("Running on port " + port);
 app.listen(port);
