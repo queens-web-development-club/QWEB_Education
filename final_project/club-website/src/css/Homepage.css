@@ -1,210 +1,149 @@
 /* Home Page - Carousel Section */
-.carousel{
-
+.carousel {
 }
-.homepage-socials{
-    /* position: absolute; */
-    float: left;
+.homepage-socials {
+  /* position: absolute; */
+  float: left;
 }
-.social{
-    padding: 10px;
+.social {
+  padding: 10px;
 }
 
 /* Home Page - About Section  */
-.about-section{
-    background-color: #6DBA49;
-    padding: 150px;
-    color: #fff;
-    font-weight: 400;
+.about-section {
+  background-color: #6dba49;
+  padding: 150px;
+  color: #fff;
+  font-weight: 400;
 }
-.info-card{
-    display: flex;
+.info-card {
+  display: flex;
 }
-.about-section span{
-    font-size: 50px;
+.about-section span {
+  font-size: 50px;
 }
-.about-section p{
-    font-size: 30px;
+.about-section p {
+  font-size: 30px;
 }
-.about-section img{
-    /* border: 1px solid; */
-    padding: 20px;
-    margin-left: 50px;
+.about-section img {
+  /* border: 1px solid; */
+  padding: 20px;
+  margin-left: 50px;
 }
-.graphic1{
-    /* width: 100%; */
+.graphic1 {
+  /* width: 100%; */
 }
 
 /* Home Page - Upcoming Events Section */
-.upcoming-events-section{
-    background-color: #F5F5F5;
-    padding: 150px;
-    color: #986F59;
+.upcoming-events-section {
+  background-color: #f5f5f5;
+  padding: 150px;
+  color: #986f59;
 }
-.upcoming-events-section h3{
-    font-size: 50px;
+.upcoming-events-section h3 {
+  font-size: 50px;
 }
-.upcoming-events-section h4{
-    text-decoration: underline;
-    font-size: 40px;
+.upcoming-events-section h4 {
+  text-decoration: underline;
+  font-size: 40px;
 }
-.upcoming-events-section p{
-    font-size: 30px;
+.upcoming-events-section p {
+  font-size: 30px;
 }
-.upcoming-events-section button{
-    font-size: 30px;
-    font-family: inherit;
-    color: #fff;
-    background-color: #6DBA49;
-    border-radius: 10px;
-    padding-left: 33px;
-    padding-right: 33px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0px solid;
+.upcoming-events-section button {
+  font-size: 30px;
+  font-family: inherit;
+  color: #fff;
+  background-color: #6dba49;
+  border-radius: 10px;
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0px solid;
 }
-.upcoming-events-section a{
-    font-size: 30px;
-    color: #6DBA49;
-    text-decoration: none;
-    padding-left: 33px;
-    padding-right: 33px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+.upcoming-events-section a {
+  font-size: 30px;
+  color: #6dba49;
+  text-decoration: none;
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
-.upcoming-events-section a:hover{
-    color: #986F59;
+.upcoming-events-section a:hover {
+  color: #986f59;
 }
-
 
 /* Home Page - Shop Section */
-.shop{
-    background-color: #ECE0CD;
-    padding: 150px;
+.shop {
+  background-color: #ece0cd;
+  padding: 150px;
 }
-.shop span{
-    font-size: 50px;
-    color: #986F59;
+.shop span {
+  font-size: 50px;
+  color: #986f59;
 }
-.home-shop-items{
-    /* border: 1px solid; */
-    display: flex;
+.home-shop-items {
+  /* border: 1px solid; */
+  display: flex;
 }
-
 
 /* Home Shop Card */
-.shop-card{
-    margin: 20px;
-    width: 400px;
+.shop-card {
+  margin: 20px;
+  width: 400px;
 }
 
-.item-info{
-    color: #986F59;
-    font-size: 30px;
+.item-info {
+  color: #986f59;
+  font-size: 30px;
 }
-.item-info a{
-    text-decoration: none;
-    color: #6DBA49;
+.item-info a {
+  text-decoration: none;
+  color: #6dba49;
 }
-.item-info a:hover{
-    text-decoration: none;
-    color: #986F59;
+.item-info a:hover {
+  text-decoration: none;
+  color: #986f59;
 }
 .shop-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .shop button {
-    font-size: 30px;
-    font-family: inherit;
-    color: #fff;
-    background-color: #6DBA49;
-    border-radius: 10px;
-    padding-left: 33px;
-    padding-right: 33px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0px solid;
-    height: 80px;
+  font-size: 30px;
+  font-family: inherit;
+  color: #fff;
+  background-color: #6dba49;
+  border-radius: 10px;
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0px solid;
+  height: 80px;
 }
-
-
-/* About us page */
-
-.about-us-title{
-    font-size: 50px;
-    color: #986F59;
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    text-align: center;
-}
-.about-us-title h1{
-    font-size: 80px
-}
-.about-us-title h2{
-    font-size: 50px;
-    font-weight: normal;
-}
-
-.about-us-info{
-    font-size: 30px;
-    color: #fff;
-    background-color: #6DBA49;
-    padding: 150px;
-}
-
-.about-us-info .register-button{
-    font-size: 30px;
-    font-family: inherit;
-    color: #986F59;
-    background-color: #ECE0CD;
-    border-radius: 10px;
-    padding-left: 33px;
-    padding-right: 33px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0px solid;
-    height: 80px;
-}
-
-.about-us-info .register-button:hover{
-    border: 2px solid #fff;
-    color: #fff;
-    background-color: #6DBA49;
-    transition: 250ms;
-}
-
-.about-us-info a{
-    margin-top: 100px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 
 /* Contact us page */
-.contact-us{
-    text-align: center;
-    background-color: #fff;
-    margin-top: 100px;
-    margin-bottom: 120px;
+.contact-us {
+  text-align: center;
+  background-color: #fff;
+  margin-top: 100px;
+  margin-bottom: 120px;
 }
-.contact-us h1{
-    font-size: 90px;
-    color: #986F59;
+.contact-us h1 {
+  font-size: 90px;
+  color: #986f59;
 }
-.contact-us span{
-    font-size: 45px;
-    color: #6DBA49;
+.contact-us span {
+  font-size: 45px;
+  color: #6dba49;
 }
-.contact-us p{
-    font-size: 90px;
-    color: #6DBA49;
-    padding-top: 50px;
-    padding-bottom: 50px;
+.contact-us p {
+  font-size: 90px;
+  color: #6dba49;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
-
-
