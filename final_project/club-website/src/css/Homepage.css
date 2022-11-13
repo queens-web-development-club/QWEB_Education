@@ -128,3 +128,83 @@
     border: 0px solid;
     height: 80px;
 }
+
+
+/* About us page */
+
+.about-us-title{
+    font-size: 50px;
+    color: #986F59;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}
+.about-us-title h1{
+    font-size: 80px
+}
+.about-us-title h2{
+    font-size: 50px;
+    font-weight: normal;
+}
+
+.about-us-info{
+    font-size: 30px;
+    color: #fff;
+    background-color: #6DBA49;
+    padding: 150px;
+}
+
+.about-us-info .register-button{
+    font-size: 30px;
+    font-family: inherit;
+    color: #986F59;
+    background-color: #ECE0CD;
+    border-radius: 10px;
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0px solid;
+    height: 80px;
+}
+
+.about-us-info .register-button:hover{
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: #6DBA49;
+    transition: 250ms;
+}
+
+.about-us-info a{
+    margin-top: 100px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Contact us page */
+.contact-us{
+    text-align: center;
+    background-color: #fff;
+    margin-top: 100px;
+    margin-bottom: 120px;
+}
+.contact-us h1{
+    font-size: 90px;
+    color: #986F59;
+}
+.contact-us span{
+    font-size: 45px;
+    color: #6DBA49;
+}
+.contact-us p{
+    font-size: 90px;
+    color: #6DBA49;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
