@@ -1,4 +1,4 @@
-import "../css/about.css";
+import '../css/about.css'
 
 function AboutUs() {
   return (
@@ -26,7 +26,7 @@ function AboutUs() {
         </a>
       </div>
     </>
-  );
+  )
 }
 
-export default AboutUs;
+export default AboutUs

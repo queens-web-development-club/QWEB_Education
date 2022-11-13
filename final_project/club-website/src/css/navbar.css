@@ -11,12 +11,16 @@
   display: flex;
   align-items: center;
   padding: 24px;
-  font-family: "Fredoka", sans-serif;
+  font-family: 'Fredoka', sans-serif;
   color: #fff;
 }
 
 .navbar-img {
   width: 100px;
+  margin-left: 20px;
+}
+.navbar-img2 {
+  width: 50px;
   margin-left: 20px;
 }
 
