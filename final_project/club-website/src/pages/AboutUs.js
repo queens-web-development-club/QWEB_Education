@@ -1,4 +1,4 @@
-import "../css/Homepage.css";
+import "../css/about.css";
 
 function AboutUs() {
   return (
@@ -26,7 +26,6 @@ function AboutUs() {
             <button className="register-button">Register Now!</button>
           </a>
         </div>
-      </div>
     </>
   );
 }

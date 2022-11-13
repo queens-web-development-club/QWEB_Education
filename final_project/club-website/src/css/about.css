@@ -1,0 +1,45 @@
+
+.about-us-heading {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    grid-gap: 50px;
+
+}
+
+.about-us-heading h1, h5 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.about-us-blurb {
+    padding: 70px;
+    color: #F5F5F5;
+    background-color: #6DBA49;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 40px;
+    font-size: 20px;
+}
+
+.about-us-button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 45px;
+    padding-right: 45px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+    background-color: #ECE0CD;
+    color: #986F59;
+}
+
+.about-us-button-container {
+    display: flex;
+    justify-content: center;
+}
