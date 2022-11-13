@@ -1,17 +1,27 @@
-import "../css/Homepage.css";
+import "../css/about.css";
 
 function AboutUs() {
   return (
     <>
-      <div className="about-us">
-        <h1>About Us</h1>
-        <p>
-          Our club is a group of students who are interested in learning about
-          the world of technology. We meet every week to discuss the latest tech
-          news and to learn about new technologies. We also have a lot of fun
-          doing it!
-        </p>
+      <div className="about-us-heading">
+        <h1>WHO ARE WE?</h1>
+        <h5>
+          WHO ARE YOU? THAT’S WHAT WE WANNA KNOW
+        </h5>
       </div>
+        <div className="about-us-blurb">
+            <p>
+                Queen’s People Watching Club is a non-profit organization that watches targeted individuals for meticulous reasons that are confidential to only the watcher themselves.
+            </p>
+            <p>
+                Our mission is to enhance our observation senses by following the routines of handpicked individuals that catches our eye. As you join us in our rituals, you shall open your mind more to more than one world, through the lives of other fellow human beings that are minding their own business.
+            </p>
+
+            <div className={"about-us-button-container"}>
+                <button className={"about-us-button"}>Register Now!</button>
+            </div>
+
+        </div>
     </>
   );
 }
