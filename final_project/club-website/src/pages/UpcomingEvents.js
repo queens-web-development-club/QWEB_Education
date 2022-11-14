@@ -1,6 +1,6 @@
-import "../css/Homepage.css";
-import UpcomingEventCard from "../components/UpcomingEventCard";
-import React, {useState, useEffect } from "react";
+import '../css/Homepage.css'
+import UpcomingEventCard from '../components/UpcomingEventCard'
+import React, { useState, useEffect } from 'react'
 
 // How we would pass props not using a database
 
@@ -52,35 +52,49 @@ import React, {useState, useEffect } from "react";
 // ];
 
 function UpcomingEvents(props) {
-  const [data, setData] = useState(null);
-  
+  console.log('we are calling this guys')
+  const [data, setData] = useState(null)
   useEffect(() => {
+    console.log('caled use effect')
     const fetchData = async () => {
-      const response = await fetch(`http://localhost:3001/events`);
-      const newData = await response.json();
-      setData(newData);  
-    };
-    fetchData();
-  }, [props.id]);
+      const response = await fetch(`http://localhost:3001/events`)
+      const newData = await response.json()
+      console.log('new data', newData)
+      setData(newData)
+      console.log('data', data)
+    }
+    fetchData()
+  }, [])
 
-  return (
-    <>
-      <div className="upcoming-events">
-        <h1>Upcoming Events</h1>
-        <div className="events-section"> 
-          <UpcomingEventCard info={data[0]}/>
-          <UpcomingEventCard info={data[1]}/>
-          <UpcomingEventCard info={data[2]}/>
-          <UpcomingEventCard info={data[3]}/>
+  if (data != null) {
+    return (
+      <>
+        <div className="upcoming-events">
+          <h1>Upcoming Events</h1>
+          <div className="events-section">
+            <UpcomingEventCard info={data[0]} />
+            <UpcomingEventCard info={data[1]} />
+            <UpcomingEventCard info={data[2]} />
+            <UpcomingEventCard info={data[3]} />
+          </div>
+          <div className="upcoming-events-end">
+            <div className="horizontal-line"></div>
+            <p>You've reached the end</p>
+            <div className="horizontal-line"></div>
+          </div>
         </div>
-        <div className="upcoming-events-end">
-          <div className="horizontal-line"></div>
-          <p>You've reached the end</p>
-          <div className="horizontal-line"></div>
+      </>
+    )
+  } else {
+    return (
+      <>
+        <div className="upcoming-events">
+          <h1>Upcoming Events</h1>
+          <p>Upcoming events will be displayed here!</p>
         </div>
-      </div>
-    </>
-  );
+      </>
+    )
+  }
 }
 
-export default UpcomingEvents;
+export default UpcomingEvents

@@ -1,22 +1,21 @@
-import react, { useState, useEffect } from "react";
-import "../css/navbar.css";
-import Binoculars from "../img/binoculars.png";
-import Cart from "../img/shop/cart_icon.png";
+import react, { useState, useEffect } from 'react'
+import '../css/navbar.css'
+import Binoculars from '../img/binoculars.png'
+import Cart from '../img/shop/cart_icon.png'
 
 const Navbar = () => {
-  const originalIsMobile = window.innerWidth < 800;
-  const [isMobile, setIsMobile] = useState(originalIsMobile);
+  const originalIsMobile = window.innerWidth < 800
+  const [isMobile, setIsMobile] = useState(originalIsMobile)
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 800);
-    };
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+      setIsMobile(window.innerWidth < 800)
+    }
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
-  if(isMobile === false){
-    console.log(isMobile)
+  if (isMobile === false) {
     return (
       <div className="centered-div">
         <nav className="navbar">
@@ -45,8 +44,8 @@ const Navbar = () => {
           </a>
         </nav>
       </div>
-    );
-  } else if(isMobile === true){
+    )
+  } else if (isMobile === true) {
     return (
       <div className="centered-div">
         <nav className="navbar">
@@ -61,10 +60,8 @@ const Navbar = () => {
           </div>
         </nav>
       </div>
-    );
+    )
   }
+}
 
-  
-};
-
-export default Navbar;
+export default Navbar
