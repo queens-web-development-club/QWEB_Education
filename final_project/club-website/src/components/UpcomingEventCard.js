@@ -5,7 +5,7 @@ function UpcomingEventCard(props) {
 
     return (
         <div className="upcoming-event-card">
-            <p className="card-title">{props.info.title}</p>
+            <p className="card-title">{props.info.name}</p>
             <div className="event-details">
                 {/* Left */}
                 <div className="event-details__left">
@@ -27,7 +27,7 @@ function UpcomingEventCard(props) {
                 <div className="event-details__right">
                     <div className="event-details__right__row1">
                         <p>Spaces Left</p>
-                        <span>{props.info.spacesLeft}</span>
+                        <span>{props.info.spaces_left}</span>
                     </div>
                     <div className="event-details__right__row2">
                         <p>Registerd</p>

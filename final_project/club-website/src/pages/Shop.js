@@ -1,6 +1,6 @@
-import "../css/shop.css"
-import ShopItem from "../components/ShopItem";
-import useLocalStorage from "../hooks/useLocalStorage";
+// import "../css/shop.css"
+// import ShopItem from "../components/ShopItem";
+// import useLocalStorage from "../hooks/useLocalStorage";
 
 const ITEMS = [
     {
@@ -25,19 +25,19 @@ const ITEMS = [
 
 function Shop() {
   // [ {id: int, count: int} ]
-  const [cartItems, setCartItems] = useLocalStorage("cart-items", []);
+  // const [cartItems, setCartItems] = useLocalStorage("cart-items", []);
 
-  function addItemToCart(id) {
-    let found = cartItems.find((i) => i.id === id)
-    let currentCount = 0;
-    if (found) {
-        currentCount = found.count
-    }
+  // function addItemToCart(id) {
+  //   let found = cartItems.find((i) => i.id === id)
+  //   let currentCount = 0;
+  //   if (found) {
+  //       currentCount = found.count
+  //   }
 
-    const newCart = cartItems.filter((i) => i.id !== id)
-    newCart.push({id: id, count: currentCount + 1})
-    setCartItems(newCart);
-  }
+  //   const newCart = cartItems.filter((i) => i.id !== id)
+  //   newCart.push({id: id, count: currentCount + 1})
+  //   setCartItems(newCart);
+  // }
 
   return (
     <>
@@ -45,14 +45,14 @@ function Shop() {
         <h2 className={"shop-page-header"}>Welcome to the QPWC shop!</h2>
 
         <div className="shop-page-container">
-            {ITEMS.map((i) => (
+            {/* {ITEMS.map((i) => (
                 <ShopItem
                     image={i.image}
                     name={i.name}
                     price={i.price}
                     onClick={() => addItemToCart(i.id)}
                 />
-            ))}
+            ))} */}
         </div>
       </div>
     </>
