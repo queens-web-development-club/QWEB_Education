@@ -34,7 +34,10 @@ function UpcomingEventCard(props) {
           </div>
           <div className="event-details__right__row3">
             <button className="register-button">Register</button>
-            <button className="calendar-button">
+            <button
+              className="calendar-button"
+              style={{ 'align-items': 'center', display: 'flex' }}
+            >
               <img src={Calendar}></img>
             </button>
           </div>
