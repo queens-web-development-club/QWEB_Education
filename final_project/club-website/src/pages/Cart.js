@@ -104,7 +104,7 @@ function Cart() {
           </div>
           <div className="button-row">
             <a className="empty-cart-button">Empty Cart</a>
-            <a className="checkout-button">Proceed to Checkout</a>
+            <a className="checkout-button" href="/shop/checkout">Proceed to Checkout</a>
           </div>
         </div>
       </div>
