@@ -52,16 +52,13 @@ import React, { useState, useEffect } from 'react'
 // ];
 
 function UpcomingEvents(props) {
-  console.log('we are calling this guys')
   const [data, setData] = useState(null)
+
   useEffect(() => {
-    console.log('caled use effect')
     const fetchData = async () => {
       const response = await fetch(`http://localhost:3001/events`)
       const newData = await response.json()
-      console.log('new data', newData)
       setData(newData)
-      console.log('data', data)
     }
     fetchData()
   }, [])
@@ -72,10 +69,9 @@ function UpcomingEvents(props) {
         <div className="upcoming-events">
           <h1>Upcoming Events</h1>
           <div className="events-section">
-            <UpcomingEventCard info={data[0]} />
-            <UpcomingEventCard info={data[1]} />
-            <UpcomingEventCard info={data[2]} />
-            <UpcomingEventCard info={data[3]} />
+            {data.map((event) => {
+              return <UpcomingEventCard info={event} />
+            })}
           </div>
           <div className="upcoming-events-end">
             <div className="horizontal-line"></div>
