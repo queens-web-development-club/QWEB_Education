@@ -1,50 +1,88 @@
-const Koa = require('koa');
-const router = require('@koa/router')();
-const cors = require('@koa/cors');
-const fs = require('fs');
+const { ObjectId, MongoClient } = require("mongodb");
+const express = require('express')
+const bodyParser = require('body-parser')
+const cors = require("cors");
+const { body, validationResult } = require('express-validator');
 
+// Create mongo client
+const uri = "mongodb+srv://username:password@mongodb.net/?retryWrites=true&w=majority";
+const client = new MongoClient(uri);
+const database = client.db('qweb');
+const collection = database.collection("events");
 
-let events = [];
+const app = express()
+const port = 3001
 
-function getEvents() {
-    events = JSON.parse(fs.readFileSync('events.json')).sort((a, b) => {
-        return new Date(a.date) - new Date(b.date);
+app.use(cors())
+app.use(bodyParser.json())
+
+app.get("/events/newest", async (req, res) => {
+    // Get the most recent event
+    const event = await collection.findOne({}, {sort: {date: -1}});
+    if (!event) {
+        return res.status(400).json({ error: "Event not found" });
+    }
+    return res.json(event);
+})
+
+app.get("/events/:id", async (req, res) => {
+    // Get event by id
+    const id = req.params.id;
+
+    // Make sure ID is valid
+    let mongoId;
+    try {
+        mongoId = new ObjectId(id);
+    } catch (e) {
+        return res.status(400).json({ error: "Invalid ID" });
+    }
+
+    const event = await collection.findOne({
+        _id: mongoId,
     });
-}
-getEvents();
-
-fs.watchFile("events.json", getEvents)
-
-const app = new Koa();
-const port = 3001;
-
-router.get("/events/newest", async (ctx) => {
-    const event = events[0]
     if (!event) {
-        ctx.status = 404;
-        ctx.body = "Event not found";
-        return;
+        return res.status(400).json({ error: "Event not found" });
     }
-    ctx.body = event;
+
+    return res.json(event);
 })
 
-router.get("/events/:id", async (ctx) => {
-    const id = ctx.params.id;
-    const event = events.find((event) => event.id === id);
-    if (!event) {
-        ctx.status = 404;
-        ctx.body = "Event not found";
-        return;
-    }
-    ctx.body = event;
+app.get("/events", async (req, res) => {
+    // Get all events
+    const events = await collection.find({}).toArray();
+    res.send(events);
 })
 
-router.get("/events", async (ctx) => {
-    ctx.body = events;
+app.post(
+    "/events",
+    body("name").isLength({max: 50}),
+    body("description").isLength({max: 200}),
+    body("date").isISO8601(),
+    body("location").isLength({max: 50}),
+    body("price").isLength({max: 10}),
+    body("spaces").isInt(),
+    async (req, res) => {
+        // Validate request
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) {
+            return res.status(400).json({ errors: errors.array() });
+        }
+
+        // Get the data we want to insert
+        const data = {
+            name: req.body.name,
+            description: req.body.description,
+            date: new Date(req.body.date),
+            location: req.body.location,
+            price: req.body.price,
+            spaces: req.body.spaces,
+        }
+        await collection.insertOne(data);
+
+        return res.json(data);
+    });
+
+app.listen(port, () => {
+    console.log(`Listening on port ${port}`)
 })
 
-app.use(cors());
-app.use(router.routes())
-
-console.log("Running on port " + port);
-app.listen(port);
