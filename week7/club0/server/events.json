@@ -1,0 +1,42 @@
+[
+  {
+    "id": "0",
+    "name": "Leggett Hall Viewing",
+    "description": "...Literally. Come stare at people that go in and out of Leggett Hall.\nThe registration fee goes towards the participants's popcorn fund.",
+    "date": 1669476492,
+    "location": "Parking Lot Behind Stirling Hall",
+    "price" : "$3.33",
+    "spaces_left": 2,
+    "registered": 3
+  },
+  {
+    "id": "1",
+    "name": "Stalk-Off",
+    "description": "Battle royale to see who can find everyone else's addresses first.\nThe registration fee goes towards the club leads's popcorn fund.",
+    "date": 1672068492,
+    "location": "Your Place of Residence",
+    "price" : "$6.66",
+    "spaces_left": 3,
+    "registered": 17
+  },
+  {
+    "id": "2",
+    "name": "You Are Being Watched",
+    "description": "Look behind you. The registration fee goes towards the cost of your existence permit.",
+    "date": 1670686092,
+    "location": "Your Current Location",
+    "price" : "$9.99",
+    "spaces_left": "?",
+    "registered": "?"
+  },
+  {
+    "id": "3",
+    "name": "Valentines Day Blank Stare",
+    "description": "You got a date? Yeah, me neither. Come stare at an assigned staring partner this Valentine's Day. Only lonely people allowed.",
+    "date": 1669908492,
+    "location": "136 Princess St (Shoppers Drug Mart)",
+    "price" : "FREE",
+    "spaces_left": 39,
+    "registered": 1
+  }
+]
