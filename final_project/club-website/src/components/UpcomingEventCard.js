@@ -8,9 +8,6 @@ function UpcomingEventCard(props) {
   const day = date.toLocaleString('default', { day: 'numeric' });
   const time = date.toLocaleString('default', { hour12: true, hour: 'numeric' });
 
-
-  console.log({info: props.info})
-
   return (
     <div className="upcoming-event-card">
       <p className="card-title">{props.info.name}</p>
