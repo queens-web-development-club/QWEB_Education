@@ -68,7 +68,8 @@ app.post(
             date: new Date(req.body.date),
             location: req.body.location,
             price: req.body.price,
-            spaces: req.body.spaces,
+            spaces_left: req.body.spaces_left,
+            registered: req.body.registered,
         }
         await collection.insertOne(data);
 
