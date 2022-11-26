@@ -45,9 +45,11 @@ function Checkout(props) {
                   <input type="text" placeholder="Zip Code"/>
                 </div>
               </div>
-              <a className="order-button" href="/shop/confirmation">
-                <button>Place Order</button>
-              </a>
+              <div className="centered-order-button">
+                <a className="order-button" href="/shop/confirmation">
+                  Place Order{/* <button className="order-button" >Place Order</button> */}
+                </a>
+              </div>
             </form>
           </div>
           <div className="details-right">
