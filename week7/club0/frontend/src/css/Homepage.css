@@ -1,0 +1,367 @@
+/* Home Page - Carousel Section */
+.carousel {
+}
+.homepage-socials {
+  /* position: absolute; */
+  float: left;
+}
+.social {
+  padding: 10px;
+}
+
+/* Home Page - About Section  */
+.about-section {
+  background-color: #6dba49;
+  padding: 150px;
+  color: #fff;
+  font-weight: 400;
+}
+.info-card {
+  display: flex;
+}
+.about-section span {
+  font-size: 50px;
+}
+.about-section p {
+  font-size: 30px;
+}
+.about-section img {
+  /* border: 1px solid; */
+  padding: 20px;
+  margin-left: 50px;
+}
+.graphic1 {
+  /* width: 100%; */
+}
+
+/* Home Page - Upcoming Events Section */
+.upcoming-events-section {
+  background-color: #f5f5f5;
+  padding: 150px;
+  color: #986f59;
+}
+.upcoming-events-section h3 {
+  font-size: 50px;
+}
+.upcoming-events-section h4 {
+  text-decoration: underline;
+  font-size: 40px;
+}
+.upcoming-events-section p {
+  font-size: 30px;
+}
+.upcoming-events-section button {
+  font-size: 30px;
+  font-family: inherit;
+  color: #fff;
+  background-color: #6dba49;
+  border-radius: 10px;
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0px solid;
+}
+.upcoming-events-section a {
+  font-size: 30px;
+  color: #6dba49;
+  text-decoration: none;
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.upcoming-events-section a:hover {
+  color: #986f59;
+}
+
+/* Home Page - Shop Section */
+.shop {
+  background-color: #ece0cd;
+  padding: 150px;
+}
+.shop span {
+  font-size: 50px;
+  color: #986f59;
+}
+.home-shop-items {
+  /* border: 1px solid; */
+  display: flex;
+}
+
+/* Home Shop Card */
+.shop-card {
+  margin: 20px;
+  width: 400px;
+}
+
+.item-info {
+  color: #986f59;
+  font-size: 30px;
+}
+.item-info a {
+  text-decoration: none;
+  color: #6dba49;
+}
+.item-info a:hover {
+  text-decoration: none;
+  color: #986f59;
+}
+.shop-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shop button {
+  font-size: 30px;
+  font-family: inherit;
+  color: #fff;
+  background-color: #6dba49;
+  border-radius: 10px;
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0px solid;
+  height: 80px;
+}
+
+/* About us page */
+
+.about-us-title {
+  font-size: 50px;
+  color: #986f59;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+}
+.about-us-title h1 {
+  font-size: 80px;
+}
+.about-us-title h2 {
+  font-size: 50px;
+  font-weight: normal;
+}
+
+.about-us-info {
+  font-size: 30px;
+  color: #fff;
+  background-color: #6dba49;
+  padding: 150px;
+}
+
+.about-us-info .register-button {
+  font-size: 30px;
+  font-family: inherit;
+  color: #986f59;
+  background-color: #ece0cd;
+  border-radius: 10px;
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0px solid;
+  height: 80px;
+}
+
+/* Contact us page */
+.contact-us {
+  text-align: center;
+  background-color: #fff;
+  margin-top: 100px;
+  margin-bottom: 120px;
+}
+.contact-us h1 {
+  font-size: 90px;
+  color: #986f59;
+}
+.contact-us span {
+  font-size: 45px;
+  color: #6dba49;
+}
+.contact-us p {
+  font-size: 90px;
+  color: #6dba49;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* -------------------- */
+/* Upcoming Events Page */
+/* -------------------- */
+
+.upcoming-events {
+  background-color: #fff;
+  margin-top: 70px;
+}
+.upcoming-events h1 {
+  font-size: 72px;
+  color: #986f59;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.events-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  direction: column;
+  flex-wrap: wrap;
+  padding: 30px 0px;
+  background-color: #6dba49;
+}
+.horizontal-line {
+  margin: 0px 20px;
+  width: 38%;
+  border: 1px solid;
+}
+.upcoming-events-end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  direction: row;
+  flex-wrap: wrap;
+  padding: 30px 0px;
+  color: #986f59;
+  background-color: #fff;
+}
+
+/* ---------- */
+/* Event Card */
+/* ---------- */
+
+.upcoming-event-card {
+  margin: 20px;
+  width: 90%;
+  background-color: #fff;
+  color: #986f59;
+  border-radius: 10px;
+  padding: 20px;
+}
+.card-title {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 0px;
+  font-size: 60px;
+  font-weight: bold;
+  color: #986f59;
+}
+
+.event-details {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.event-details__left {
+  width: 77%;
+  padding: 15px;
+}
+.event-details__left p {
+  font-size: 28px;
+  padding-bottom: 30px;
+}
+.event-details__right {
+  width: 23%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+.event-details__right__row1 {
+  font-size: 28px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.event-details__right__row2 {
+  font-size: 28px;
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.event-details__right__row3 {
+  font-size: 28px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.register-button {
+  font-size: 28px;
+  color: #fff;
+  background-color: #6dba49;
+  border-radius: 10px;
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: 80px;
+  border: 0px solid;
+  transition: background-color 350ms ease;
+}
+.register-button:hover {
+  background-color: #579b38;
+  cursor: pointer;
+}
+.calendar-button {
+  size: 28px;
+  color: #fff;
+  background-color: #6dba49;
+  border-radius: 10px;
+  padding: 20px;
+  height: 80px;
+  border: 0px solid;
+  transition: background-color 350ms ease;
+}
+.calendar-button:hover {
+  background-color: #579b38;
+  cursor: pointer;
+}
+
+.all-details {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  /* flex-wrap: wrap; */
+}
+
+.calendar-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 130px;
+  background-color: #6dba49;
+  border-radius: 15px;
+}
+.month {
+  font-size: 24px;
+  color: #fff;
+}
+.day {
+  font-size: 70px;
+  color: #fff;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: left; */
+  /* align-items: left; */
+  margin-left: 20px;
+}
+.details span {
+  font-size: 1.8rem;
+  color: #986f59;
+  padding-top: 5px;
+}
+.center .text {
+  margin-top: 15%;
+}
+
+.center .text h1,
+p {
+  margin: 0;
+}
