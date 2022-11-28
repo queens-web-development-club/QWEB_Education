@@ -1,0 +1,51 @@
+.about-us-title {
+  font-size: 50px;
+  color: #986f59;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+}
+.about-us-title h1 {
+  font-size: 80px;
+}
+.about-us-title h2 {
+  font-size: 50px;
+  font-weight: normal;
+}
+
+.about-us-info {
+  font-size: 30px;
+  color: #fff;
+  background-color: #6dba49;
+  padding: 150px;
+}
+
+.about-us-info .register-button {
+  font-size: 30px;
+  font-family: inherit;
+  color: #986f59;
+  background-color: #ece0cd;
+  border-radius: 10px;
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0px solid;
+  height: 80px;
+}
+
+.about-us-info .register-button:hover {
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: #6dba49;
+  transition: 250ms;
+}
+
+.about-us-info a {
+  margin-top: 100px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

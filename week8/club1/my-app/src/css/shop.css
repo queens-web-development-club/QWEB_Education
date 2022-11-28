@@ -1,0 +1,17 @@
+.shop-page {
+    padding: 50px;
+}
+
+.shop-page-container {
+    display: flex;
+}
+
+.shop-page-container {
+    display: flex;
+    grid-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.shop-page-header {
+    margin-bottom: 50px;
+}

@@ -1,4 +1,3 @@
-const { ObjectId, MongoClient } = require("mongodb");
 const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require("cors");
@@ -10,6 +9,7 @@ app.use(cors())
 app.use(bodyParser.json())
 
 app.use('/events', require('./events'))
+app.use('/contact', require('./contact'))
 
 app.listen(port, () => {
     console.log(`Listening on port ${port}`)
