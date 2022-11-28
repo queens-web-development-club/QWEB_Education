@@ -1,14 +1,6 @@
 const express = require('express')
 const { body, validationResult } = require('express-validator');
-const formData = require('form-data');
-const Mailgun = require('mailgun.js');
-
-// Setup mailgun
-const mailgun = new Mailgun(formData);
-const mg = mailgun.client({
-    username: 'api',
-    key: 'key',
-});
+const email = require("@emailjs/nodejs")
 
 // Get router object (initialized in app.js)
 const app = express.Router();
@@ -25,13 +17,20 @@ app.post(
             return res.status(400).json({ errors: errors.array() });
         }
 
-        await mg.messages
-            .create("sandboxef006725118f499a8edcb564dc28c3ef.mailgun.org", {
-                from: "Mailgun Sandbox <postmaster@sandboxef006725118f499a8edcb564dc28c3ef.mailgun.org>",
-                to: [req.body.email],
-                subject: "Hello " + req.body.name,
-                text: "You said: " + req.body.message,
-            })
+        try {
+            await email.send(
+                "service_1vldr1v",
+                "template_5ajo4q6",
+                { name: req.body.name, message: req.body.message },
+                {
+                    publicKey: "",
+                    privateKey: "",
+                }
+            );
+        } catch (e) {
+            console.log("ERR", e)
+        }
+
         // 204 no content
         return res.status(204).send();
     });
