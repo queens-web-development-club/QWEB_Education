@@ -1,22 +1,23 @@
-import './css/App.css'
-import Navbar from './components/navbar'
-import Footer from './components/Footer'
-import { Route, Routes } from 'react-router-dom'
+import "./css/App.css";
+import Navbar from "./components/navbar";
+import Footer from "./components/Footer";
+import { Route, Routes } from "react-router-dom";
 
 // Pages
-import Home from './pages/Home'
-import AboutUs from './pages/AboutUs'
-import Shop from './pages/Shop'
-import UpcomingEvents from './pages/UpcomingEvents'
-import PastEvents from './pages/PastEvents'
-import ContactUs from './pages/ContactUs'
-import NotFound from './pages/NotFound'
-import Cart from './pages/Cart'
-import Checkout from './pages/Checkout'
+import Home from "./pages/Home";
+import AboutUs from "./pages/AboutUs";
+import Shop from "./pages/Shop";
+import UpcomingEvents from "./pages/UpcomingEvents";
+import PastEvents from "./pages/PastEvents";
+import ContactUs from "./pages/ContactUs";
+import NotFound from "./pages/NotFound";
+import Cart from "./pages/Cart";
+import Checkout from "./pages/Checkout";
 
 function App() {
   return (
     <>
+      <h1>NEW!!!</h1>
       <Navbar />
       <Routes>
         {/* Pages */}
@@ -34,7 +35,7 @@ function App() {
       </Routes>
       <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
